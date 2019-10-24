@@ -60,7 +60,6 @@ const swapButtons = () => {
     else {
         startGameButton.style.display = "none";
         rollButton.style.display = "unset"
-        // displayScoreAlert();
     }
 }
 
@@ -131,7 +130,6 @@ roll dice, number 1-6
 
 const rollDice = () => {
     randomRoll = Math.floor(Math.random()*6)+1;
-    // console.log(`${randomRoll}`)
     diceImage.src = `img/dice${randomRoll}.png`
     rollFunction()
 }
@@ -167,9 +165,7 @@ const hasThePlayerWon = () => {
     }
 }
 
-
 /* when the start game button is pressed it swaps the buttons, from displaying start game to roll. 
-
 */
 
 const startGame = ()=> {

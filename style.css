@@ -1,4 +1,51 @@
+h1 {
+    font-family: 'Fascinate Inline', cursive;
+    color: white;
+    font-size: 10vh;
+    display: inline;
+}
+
 .diceimage {
-    max-width:30%;
-    height:auto;
+    max-width:20%;
+    height: auto;
+    margin: auto;
+    margin-top: 30vh;
+    display: block;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/07/16/46/roll-the-dice-1502706_1280.jpg);
+    color: white;
+    text-align: center;
+}
+
+button {
+    margin: 2vh;
+    font-size: 5vh;
+    font-family:'Fascinate Inline', cursive;
+}
+
+.start {
+    background-color: grey;
+}
+
+.playerContents {
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding: 2vh;
+}
+
+.playerContents h2 {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 5vh;
+}
+
+.playerOneLeft {
+    background-color: grey;
+    background-size: cover;
+}
+
+.playerTwoRight {
+    background-color: grey;
+    background-size: cover;
 }
