@@ -6,22 +6,25 @@ h1 {
 }
 
 .diceimage {
-    max-width:20%;
+    max-width:40%;
     height: auto;
-    margin: auto;
-    margin-top: 30vh;
-    display: block;
+    padding: 13vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 body {
     background-image: url(https://cdn.pixabay.com/photo/2016/07/07/16/46/roll-the-dice-1502706_1280.jpg);
     color: white;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 button {
-    margin: 2vh;
+    margin: auto;
     font-size: 5vh;
+    padding: 2vh;
     font-family:'Fascinate Inline', cursive;
 }
 
@@ -33,6 +36,7 @@ button {
     margin: 0 auto;
     margin-top: 5vh;
     padding: 2vh;
+    display: flex;
 }
 
 .playerContents h2 {
@@ -43,9 +47,20 @@ button {
 .playerOneLeft {
     background-color: grey;
     background-size: cover;
+    width: 33%;
+    height: 40%;
 }
 
 .playerTwoRight {
     background-color: grey;
     background-size: cover;
+    width: 33%;
+    height: 40%;
+    margin: 0;
+}
+
+.centralBlock {
+    margin: 2vh;
+    width: 33%;
+    height: 100%;
 }

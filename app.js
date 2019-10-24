@@ -28,13 +28,11 @@ Adding the points to the players score
 const score =() => {
     if (playerOneTurn){
         playerOneScore+=randomRoll;
-        console.log(playerOneScore)
-        playerOneScoreAlert.textContent = `Player 1 your score is ${playerOneScore}`
+        playerOneScoreAlert.textContent = `Score: ${playerOneScore}`
     }
     else {
         playerTwoScore+=randomRoll;
-        console.log(playerTwoScore)
-        playerTwoScoreAlert.textContent = `Player 2 your score is ${playerTwoScore}`
+        playerTwoScoreAlert.textContent = `Score: ${playerTwoScore}`
     }
 }
 
@@ -70,14 +68,10 @@ change player turns
 const changePlayer =() =>{
     if (playerOneTurn){
         playerOneTurn=false;
-        playerOneScoreAlert.style.color = "red";
-        playerTwoScoreAlert.style.color = "green"
 
     }
     else {
         playerOneTurn=true;
-        playerOneScoreAlert.style.color = "green";
-        playerTwoScoreAlert.style.color = "red";
     }
 }
 
@@ -86,9 +80,9 @@ Display the players scores (when the game begins)
 */
 const displayScoreAlert = () => {
     console.log(`My score is: ${playerOneScore}`);
-    playerOneScoreAlert.textContent = `Player 1 your score is ${playerOneScore}`
+    playerOneScoreAlert.textContent = `Score: ${playerOneScore}`
     playerOneScoreAlert.style.visibility = "visible";
-    playerTwoScoreAlert.textContent = `Player 2 your score is ${playerTwoScore}`
+    playerTwoScoreAlert.textContent = `Score: ${playerTwoScore}`
     playerTwoScoreAlert.style.visibility = "visible";
 }
 
@@ -105,18 +99,18 @@ const rollFunction = () => {
     else {
         resetScores()
         if (playerOneTurn){
-            playerOneAlert.textContent = `You lost Player One! You rolled 1.`
+            playerOneAlert.textContent = `LOSE! You rolled a 1.`
             playerOneAlert.style.visibility = "visible"
             playerOneScoreAlert.style.visibility = "hidden"
-            playerTwoAlert.textContent = `You won Player Two! Congrats!`
+            playerTwoAlert.textContent = `Congrats, you legend, you won!`
             playerTwoAlert.style.visibility = "visible"
             playerTwoScoreAlert.style.visibility = "hidden"
         }
         else {
-            playerOneAlert.textContent = `You WON Player One! Congrats!`
+            playerOneAlert.textContent = `Congrats, you legend, you won!`
             playerOneAlert.style.visibility = "visible"
             playerOneScoreAlert.style.visibility = "hidden"
-            playerTwoAlert.textContent = `You LOST Player Two! You rolled 1.`
+            playerTwoAlert.textContent = `LOSE! You rolled a 1.`
             playerTwoAlert.style.visibility = "visible"
             playerTwoScoreAlert.style.visibility = "hidden"
         }
@@ -159,7 +153,7 @@ const hasThePlayerWon = () => {
         playerOneAlert.textContent =" You LOST Player One!";
         playerOneAlert.style.visibility = "visible";
         playerOneScoreAlert.style.visibility = "hidden";
-        playerOneScore =0;
+        playerOneScore = 0;
         playerTwoScore = 0;
         swapButtons()
     }
